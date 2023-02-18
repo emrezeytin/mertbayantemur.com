@@ -14,17 +14,17 @@ export function LatestVideo() {
         setData(data)
         setLoading(false)
       })
-  }, [])
+  }, [youtubeApiUrl])
 
   if (!data || isLoading)
     return (
       <>
         <div
           role="status"
-          className="flex aspect-video h-full max-w-[500px] animate-pulse items-center justify-center rounded-md bg-gray-300 dark:bg-gray-700"
+          className="flex aspect-video h-full max-w-[500px] animate-pulse items-center justify-center rounded-md bg-gray-700"
         >
           <svg
-            className="h-12 w-12 text-gray-200 dark:text-gray-600"
+            className="h-12 w-12 text-gray-600"
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
             fill="currentColor"
@@ -36,8 +36,8 @@ export function LatestVideo() {
           <span className="sr-only">Loading...</span>
         </div>
         <div className="mb-8 w-full p-4">
-          <div className="mb-2 h-3 w-full animate-pulse rounded-md bg-gray-200 dark:bg-gray-700"></div>
-          <div className="h-3 w-full animate-pulse rounded-md bg-gray-200 dark:bg-gray-700"></div>
+          <div className="mb-2 h-3 w-full animate-pulse rounded-md bg-gray-700"></div>
+          <div className="h-3 w-full animate-pulse rounded-md bg-gray-700"></div>
         </div>
       </>
     )

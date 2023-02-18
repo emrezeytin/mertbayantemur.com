@@ -13,10 +13,10 @@ export function SiteHeader({ socials }) {
             <AvatarFallback>MB</AvatarFallback>
           </Avatar>
           <div>
-            <h1 className="mb-1 text-xl font-bold leading-tight text-neutral-900 dark:text-neutral-100 md:text-2xl">
+            <h1 className="mb-1 text-xl font-bold leading-tight text-neutral-100 md:text-2xl">
               {siteConfig.name}
             </h1>
-            <p className="text-lg text-neutral-600 dark:text-neutral-400">
+            <p className="text-lg text-neutral-400">
               {siteConfig.description}
             </p>
           </div>
