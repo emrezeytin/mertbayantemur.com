@@ -1,29 +1,14 @@
-import { NavItem } from "@/types/nav"
-
 interface SiteConfig {
   name: string
   description: string
-  mainNav: NavItem[]
-  links: {
-    twitter: string
-    github: string
-    docs: string
-  }
+  image: string
+  url: string
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Next.js",
+  name: "Mert Bayantemur",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
-  mainNav: [
-    {
-      title: "Home",
-      href: "/",
-    },
-  ],
-  links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/ui",
-    docs: "https://ui.shadcn.com",
-  },
+    "İçerik üreticisi",
+  image: "https://yt3.googleusercontent.com/ytc/AL5GRJXi6iFbMZNoxu6Z48OTbqz25typreebFGACHZ3nGw=s176-c-k-c0x00ffffff-no-rj-mo",
+  url: "https://mertbayantemur.com",
 }

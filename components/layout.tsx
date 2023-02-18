@@ -1,4 +1,6 @@
-import { SiteHeader } from "@/components/site-header"
+import Head from "next/head"
+
+import { siteConfig } from "@/config/site"
 
 interface LayoutProps {
   children: React.ReactNode
@@ -7,8 +9,13 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   return (
     <>
-      <SiteHeader />
-      <main>{children}</main>
+      <Head>
+        <title>{siteConfig.name}</title>
+        <meta name="description" content={siteConfig.description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      {children}
     </>
   )
 }
